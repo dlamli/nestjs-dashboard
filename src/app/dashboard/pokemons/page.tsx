@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 const getPokemons = async (limit = 20, offset = 0): Promise<IPokemon[]> => {
   const response = fetch(
-    `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`
+    `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`,
   );
   const data: Promise<IPokemonResponse> = (await response).json();
 

@@ -7,7 +7,7 @@ export const PokemonCard = ({ id, name }: IPokemon) => {
   return (
     <div className="max-w-sm bg-slate-950/80 border border-gray-200 rounded-lg shadow min-w-[200px] min-h-[200px]">
       <Link
-        href={`/dashboard/pokemon/${id}`}
+        href={`/dashboard/pokemons/${name}`}
         className="flex flex-col justify-center items-center gap-4 p-4"
       >
         <p className="text-sm font-bold tracking-tight text-white text-center">

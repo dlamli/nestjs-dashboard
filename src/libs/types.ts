@@ -1,3 +1,7 @@
+import { getServerSideProps } from "next/dist/build/templates/pages";
+
+export type Props = Awaited<ReturnType<typeof getServerSideProps>>["props"];
+
 export interface ISidebarMenuItem {
   path: string;
   icon: JSX.Element;
